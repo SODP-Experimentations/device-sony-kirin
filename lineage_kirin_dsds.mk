@@ -19,9 +19,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9,0
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/kirin/aosp_i3113.mk)
+$(call inherit-product, device/sony/kirin/lineage_kirin.mk)
 
-PRODUCT_NAME := aosp_i4113
+PRODUCT_NAME := lineage_kirin_dsds
 PRODUCT_DEVICE := kirin
 PRODUCT_MODEL := Xperia 10 (AOSP)
 PRODUCT_BRAND := Sony

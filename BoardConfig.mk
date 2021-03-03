@@ -15,9 +15,9 @@
 include device/sony/ganges/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %i3113,$(TARGET_PRODUCT)))
+ifneq (,lineage_kirin,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := I3113
-else ifneq (,$(filter %i4113,$(TARGET_PRODUCT)))
+else ifneq (,lineage_kirin_dsds,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := I4113
 else
 TARGET_BOOTLOADER_BOARD_NAME := I3113

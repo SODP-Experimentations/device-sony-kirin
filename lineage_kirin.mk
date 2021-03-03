@@ -19,7 +19,15 @@ $(call inherit-product, device/sony/kirin/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-PRODUCT_NAME := aosp_i3113
+### BOOTANIMATION
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
+
+### LINEAGE
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_kirin
 PRODUCT_DEVICE := kirin
 PRODUCT_MODEL := Xperia 10 (AOSP)
 PRODUCT_BRAND := Sony

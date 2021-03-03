@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_i3113.mk \
-                     $(LOCAL_DIR)/aosp_i4113.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/lineage_kirin.mk \
+                     $(LOCAL_DIR)/lineage_kirin_dsds.mk
 
 COMMON_LUNCH_CHOICES += \
-    aosp_i3113-eng \
-    aosp_i3113-userdebug \
-    aosp_i4113-eng \
-    aosp_i4113-userdebug
+    lineage_kirin-eng \
+    lineage_kirin-userdebug \
+    lineage_kirin_dsds-eng \
+    lineage_kirin_dsds-userdebug
